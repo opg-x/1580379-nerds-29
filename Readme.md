@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
-* Студент: [Антон Федяев](https://up.htmlacademy.ru/htmlcss/29/user/1580379).
-* Наставник: `Неизвестно`.
+- Студент: [Антон Федяев](https://up.htmlacademy.ru/htmlcss/29/user/1580379).
+- Наставник: [Роман Кушнир] (https://htmlacademy.ru/profile/id485545).
 
 ---
 
