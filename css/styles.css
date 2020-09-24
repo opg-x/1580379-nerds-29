@@ -1,0 +1,221 @@
+/* FONTS */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('roboto'), local('roboto-regular'),
+         url("/fonts/roboto.woff2") format("woff2"),
+         url("/fonts/roboto.woff") format("woff"); 
+    font-display: swap;
+}
+
+    @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: local('robotobold'), local('roboto-Bold'),
+         url("/fonts/robotobold.woff2") format('woff2'), 
+         url("/fonts/robotobold.woff") format('woff');
+    font-display: swap;
+  }
+
+  /* VARIABILATIES */
+
+  :root {
+      --basic-black: #000000;
+      --dark-grey-blue: #283136;
+      --darker-grey: #444444;
+      --dark-grey: #666666;
+      --grey: #a6a6a6;
+      --light-grey: #c1c1c1;
+      --basic-white: #ffffff;
+      --white-grey: #eeeeee;
+      --coral: #fb565a;
+      --coral-hover: #e74246;
+      --coral-active: #d7373b;
+      --light-grey: #e1e1e1;
+      --green: #00CA74;
+      --green-hover: #00bc6c;
+      --green-active: #00aa62;
+      --yellow: #efc849;
+      --yellow-hover: #eab534;
+      --yellow-active: #e5a722;
+      
+      --special: #01A25E;
+  }
+  /* GLOBAL */
+
+  body {
+      min-width: 1440px;
+      margin: 0;
+      padding: 0;
+      font-family: "Roboto", Arial, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      color: var(--basic-black);
+      text-transform: none;
+      background-color: var(--basic-white);
+  }
+  .page-body a { 
+      text-decoration: none;
+  }
+  .page img {
+      max-width: 100%;
+      height: auto;
+  }
+  .page ul {
+      list-style-type: none;
+  }
+
+
+  /* MAIN NAVIGATION */
+
+  .main-navigation {
+      font-size: 16px;
+      line-height: 30px;
+      color: var(--basic-black);
+      background-color: var(--white-grey);
+  }
+  .main-navigation a {
+      color: var(--basic-black);
+  }
+  .main-navigation a :hover {
+      color: var(--coral);
+  }
+  .main-navigation a:active {
+      color: inherit;
+      opacity: 0.3;
+  }
+
+  /*BUTTON-CORAL*/
+
+  .button {
+    border-radius: 3px;
+    color: var(--basic-white);
+    background-color: var(--coral);
+  }
+  .button-know-more:hover, 
+  .button-web:hover,
+  .button-write-us:hover {
+    background-color: var(--coral-hover);
+  }
+  .button-know-more:active,
+  .button-web:active,
+  .button-write-us:active {
+    background-color: var(--coral-active);
+  }
+
+    /*SLIDER*/
+
+  .feature-item h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 55px;
+  }
+  .feature-item p {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--dark-grey-blue);
+  }
+  .services-list h3 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .services-list p {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--dark-grey-blue);
+  }
+
+  /*BUTTON-APP*/
+
+  .button-app {
+    background-color: var(--coral);
+  }
+  .button-app:hover {
+    background-color: var(--green-hover);
+  }
+  .button-app:active {
+    background-color: var(--green-active);
+  }
+  .button-app {
+    background-color: var(--green);
+  }
+
+  /*BUTTON-PRESENTATION*/
+
+  .button-presentation {
+    background-color: var(--yellow);
+  }
+  .button-presentation:hover {
+    background-color: var(--yellow-hover);
+  }
+  .button-presentation:active {
+    background-color: var(--yellow-active);
+  }
+  .about-us h2 {
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 45px;
+  }
+  .about-us h3 {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+  .our-sevices {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--dark-grey-blue);
+  }
+  .number-row {
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 64px;
+  }
+  .value-row {
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--dark-grey-blue);
+  }
+  
+  /*FOOTER*/
+
+  .footer-contacts {
+    background-color: var(--basic-white);
+  }
+  .footer-contacts h2{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .footer-contacts p{
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--dark-grey-blue);
+  }
+  .footer-phone {
+    color: inherit;
+  }
+  .footer-social h2 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px;
+  }
+  .footer-social p {
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--dark-grey-blue);
+  }
+  .social-button:link {
+    background-color: var(--light-grey);
+  }
+  .social-button:hover {
+    background-color: var(--coral-hover);
+  }
+  .social-button:active {
+    background-color: var(--coral-active);
+  }
