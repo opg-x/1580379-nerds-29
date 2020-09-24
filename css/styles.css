@@ -9,7 +9,7 @@
     font-display: swap;
 }
 
-    @font-face {
+@font-face {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -71,15 +71,13 @@
   /* MAIN NAVIGATION */
 
   .main-navigation {
-      font-size: 16px;
       line-height: 30px;
-      color: var(--basic-black);
       background-color: var(--white-grey);
   }
   .main-navigation a {
       color: var(--basic-black);
   }
-  .main-navigation a :hover {
+  .main-navigation a:hover {
       color: var(--coral);
   }
   .main-navigation a:active {
@@ -105,7 +103,11 @@
     background-color: var(--coral-active);
   }
 
-    /*SLIDER*/
+  .center h1 {
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 55px;
+  }
 
   .feature-item h3 {
     font-style: normal;
