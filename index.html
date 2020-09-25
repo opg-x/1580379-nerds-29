@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
 </head>
 
@@ -13,43 +14,42 @@
       <a class="main-header-logo">
         <img src="#" alt="Логотип дизайн-студии Nerds">
       </a>
-      <ul class="site-navigation">
+      <ul class="main-navigation-list list-reset">
         <li><a href="#">cтудия</a></li>
         <li><a href="#">клиенты</a></li>
         <li><a href="catalog.html">магазин</a></li>
         <li><a href="#">контакты</a></li>
       </ul>
-      <a href="#" class="basket-link">Корзина</a>
+      <a href="#" class="basket-link">корзина</a>
     </nav>
   </header>
   <main class="center">
-    <h1>Дизайн студия Nerds</h1>
     <section class="features">
       <h2>Преимущества студии</h2>
-      <ul class="features-itempartnership-list">
+      <ul class="features-list list-reset">
         <li class="feature-item">
           <h3>Долго, дорого,<br>скорпулезно.</h3>
           <p>
             Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.
           </p>
-          <a href="catalog.html" class="button button-know-more">Узнать больше</a>
+          <a href="catalog.html" class="button features-button">Узнать больше</a>
         </li>
         <li class="feature-item">
           <h3>Любим математику<br>как никто другой</h3>
           <p>
             Никакого креатива, только математические формулы<br>для расчета идеальных пропорций
           </p>
-          <a href="catalog.html" class="button button-know-more">Узнать больше</a>
+          <a href="catalog.html" class="button features-button">Узнать больше</a>
         </li>
         <li class="feature-item">
           <h3>Только ночь,<br>только хардкор.</h3>
           <p>
             Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.
           </p>
-          <a href="catalog.html" class="button button-know-more">Узнать больше</a>
+          <a href="catalog.html" class="button features-button">Узнать больше</a>
         </li>
       </ul>
-      <ul class="slider-buttons">
+      <ul class="slider-buttons list-reset">
         <li><button type="button"></button></li>
         <li><button type="button"></button></li>
         <li><button type="button"></button></li>
@@ -57,18 +57,18 @@
     </section>
     <section class="services">
       <h2>Услуги</h2>
-      <ul class="services-list">
-        <li class="services-item">
+      <ul class="services-list list-reset">
+        <li>
           <h3>Веб сайты</h3>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
           <a class="button button-web" href="catalog.html">Заказать</a>
         </li>
-        <li class="services-item">
+        <li>
           <h3>Приложения</h3>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
           <a class="button button-app" href="catalog.html">Заказать</a>
         </li>
-        <li class="item">
+        <li>
           <h3>Презентации</h3>
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
           <a class="button button-presentation" href="catalog.html">Заказать</a>
@@ -83,7 +83,7 @@
           расчет превыше креатива. Работаем не покладая рук, как роботы.
         </p>
         <h3>Выполняем заказы на разработку:</h3>
-        <ul class="our-sevices">
+        <ul class="about-us-sevices-list list-reset">
           <li>Веб-сайтов любой сложности</li>
           <li>Мобильных приложений для IOS и Android</li>
           <li>Слайдшоу и видео для корпоративных презентаций</li>
@@ -91,14 +91,14 @@
       </div>
       <div class="about-statistics">
         <img src="#" alt="Логотип дизайн-студии Nerds">
-        <h3>с 2004 года Любим точность во всем:</h3>
-        <table class="table-statistics">
-          <tr class="number-row">
+        <p>с 2004 года Любим точность во всем:</p>
+        <table class="about-statistics-table">
+          <tr class="about-statistics-numbers-row">
             <td>146<sup>%</sup></td>
             <td>100<sup>%</sup></td>
             <td>50<sup>%</sup></td>
           </tr>
-          <tr class="value-row">
+          <tr class="about-statistics-value-row">
             <td>Уровень самоотдачи</td>
             <td>Соблюдение сроков</td>
             <td>Минимальная предоплата</td>
@@ -108,7 +108,7 @@
     </section>
     <section class="partnership">
       <h2>Партнеры</h2>
-      <ul class="partnership-list">
+      <ul class="partnership-list list-reset">
         <li>
           <a class="partnerhip-logo" href="https://htmlacademy.ru/intensive/htmlcss">
             <img src="#" alt="Логотип HTML академии">
@@ -132,35 +132,31 @@
       </ul>
     </section>
   </main>
-  <footer class="page-footer">
-    <section class="footer-navigation">
-      <h2>Адрес студии</h2>
-      <!--Тут будет карта-->
-      <div class="footer-contacts">
-        <h2>NЁRDS DESIGN STUDIO</h2>
-        <p>
-          191186, Санкт-Петербург,<br>
-          ул. Б. Конюшенная, д. 19/8
-        </p>
-        <p>тел. <a class="footer-phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
-        <a class="button button-write-us" href="#">Напишите нам</a>
-      </div>
-    </section>
-    <section class="footer-social">
-      <ul class="social-list">
-        <li>
-          <a class="social-button" href="#">Мы Вконтакте</a>
-        </li>
-        <li>
-          <a class="social-button" href="#">Мы в Фейсбук</a>
-        </li>
-        <li>
-          <a class="social-button" href="#">Мы в инстаграм</a>
-        </li>
-      </ul>
-      <h2>Давайте дружить, это выгодно!</h2>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
-    </section>
+  <footer class="footer">
+    <h2>Адрес студии</h2>
+    <!--Тут будет карта-->
+    <div class="footer-contacts">
+      <h2>NЁRDS DESIGN STUDIO</h2>
+      <p>
+        191186, Санкт-Петербург,<br>
+        ул. Б. Конюшенная, д. 19/8
+      </p>
+      <p>тел. <a class="footer-phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+      <a class="button footer-contacts-button" href="#">Напишите нам</a>
+    </div>
+    <ul class="footer-social-list list-reset">
+      <li>
+        <a class="footer-social-button" href="#">Мы Вконтакте</a>
+      </li>
+      <li>
+        <a class="footer-social-button" href="#">Мы в Фейсбук</a>
+      </li>
+      <li>
+        <a class="footer-social-button" href="#">Мы в инстаграм</a>
+      </li>
+    </ul>
+    <h2>Давайте дружить, это выгодно!</h2>
+    <p>Скидка 10% для друзей из социальных сетей.</p>
   </footer>
   <section>
     <h2> Напишите нам</h2>
