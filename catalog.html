@@ -1,143 +1,142 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
-  <meta charset="utf-8" />
-  <title>HTML Academy: каталог Нёрдс</title>
+  <meta charset="utf-8">
+  <title>HTML Academy: Каталог Нёрдс</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
 </head>
 
-<body>
-  <header>
-    <nav>
-      <a href="index.html">
-        <img src="#" alt="Логотип дизайн-студии Nerds" />
+<body class="page-body inner-page">
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo">
+        <img src="#" alt="Логотип дизайн-студии Nerds">
       </a>
-      <ul>
-        <li><a href="index.html">Студия</a></li>
-        <li><a href="#">Клиенты</a></li>
-        <li><a href="#">Магазин</a></li>
-        <li><a href="#">Котакты</a></li>
+      <ul class="main-navigation-list list-reset">
+        <li><a href="index.html">cтудия</a></li>
+        <li><a href="#">клиенты</a></li>
+        <li><a href="#">магазин</a></li>
+        <li><a href="#">контакты</a></li>
       </ul>
-      <a href="#">Корзина</a>
+      <a href="#" class="basket-link">корзина</a>
     </nav>
   </header>
-  <main>
-    <h1>Магазин готовых шаблонов</h1>
-    <section>
-      <h2>Фильтр товаров</h2>
-      <div>
-        <p>сортировать:</p>
-        <ul>
-          <li>
-            <a href="#">по цене</a>
-            <a href="#">по типу</a>
-            <a href="#">по названию</a>
-            <a href="#">по убыванию</a>
-            <a href="#">по возрастанию</a>
-          </li>
-        </ul>
+  <main class="center catalog">
+    <h1 class="catalog-title">Магазин готовых шаблонов</h1>
+    <section class="catalog-filter">
+      <div class="catalog-filter-sort"></div>
+      <h2>сортировать:</h2>
+      <ul class="catalog-filter-sort-list list-reset">
+        <li class="catalog-filter-sort-item"><a href="#">по цене</a></li>
+        <li class="catalog-filter-sort-item"><a href="#">по типу</a></li>
+        <li class="catalog-filter-sort-item"><a href="#">по названию</a></li>
+        <li class="catalog-filter-sort-item"><a href="#">по убыванию</a></li>
+        <li class="catalog-filter-sort-item"><a href="#">по возрастанию</a></li>
+      </ul>
       </div>
     </section>
-    <section>
+    <section class="catalog-product">
       <h2>список готовой продукции</h2>
-      <ul>
+      <ul class="catalog-product-list list-reset">
         <li>
           <img src="#" alt="Картинка сайта для туристов в городе Седона" />
-          <div>
-            <a href="#">SEDONA</a>
+          <div class="product-information">
+            <h3><a href="#">SEDONA</a></h3>
             <p>Информационный сайт для туристов</p>
-            <button type="button">9 900 ₽</button>
+            <button class="button to-buy-product-button" type="button">9 900 ₽</button>
           </div>
         </li>
         <li>
           <img src="#" alt="Мобильное приложени Пинк" />
-          <div>
-            <a href="#">PINK APP</a>
+          <div class="product-information">
+            <h3><a href="#">PINK APP</a></h3>
             <p>Продуктовый лендинг приложения для IOS и Android</p>
-            <button type="button">9 900 ₽</button>
+            <button class="button to-buy-product-button" type="button">9 900 ₽</button>
           </div>
         </li>
         <li>
           <img src="#" alt="Барбершоп Бородинский" />
-          <div>
-            <a href="#">BARBERSHOP</a>
+          <div class="product-information">
+            <h3><a href="#">BARBERSHOP</a></h3>
             <p>Сайт салона красоты. Для мужчин ,да.</p>
-            <button type="button">9 900 ₽</button>
+            <button class="button to-buy-product-button" type="button">9 900 ₽</button>
           </div>
         </li>
         <li>
           <img src="#" alt="Магазин изделий ручной работы для дома" />
-          <div>
-            <a href="#">MISHKA</a>
+          <div class="product-information">
+            <h3><a href="#">MISHKA</a></h3>
             <p>Интернет-магазин вязаных игрушек</p>
-            <button type="button">9 900 ₽</button>
+            <button class="button to-buy-product-button" type="button">9 900 ₽</button>
           </div>
         </li>
         <li>
           <img src="#" alt="Учебное заведение 	&#34;А плюс	&#34;" />
-          <div>
-            <a href="#">A PLUS</a>
+          <div class="product-information">
+            <h3><a href="#">A PLUS</a></h3>
             <p>Лендинг курсов повышения квалификации</p>
-            <button type="button">9 900 ₽</button>
+            <button class="button to-buy-product-button" type="button">9 900 ₽</button>
           </div>
         </li>
         <li>
           <img src="#" alt="Крафтовый квас &#34;Кваст&#34;" />
-          <div>
-            <a href="#">КВАСТ</a>
+          <div class="product-information">
+            <h3><a href="#">КВАСТ</a></h3>
             <p>Промо-сайт производителя крафтового кваса</p>
-            <button type="button">9 900 ₽</button>
+            <button class="button to-buy-product-button" type="button">9 900 ₽</button>
           </div>
         </li>
       </ul>
       <!--погинация-->
-      <ul>
+      <ul class="catalog-pagination-list list-reset">
         <li>
-          <a>1</a>
+          <a class="button">1</a>
         </li>
         <li>
-          <a href="#">2</a>
+          <a class="button" href="#">2</a>
         </li>
         <li>
-          <a href="#">3</a>
+          <a class="button" href="#">3</a>
         </li>
         <li>
-          <a href="#">следующая</a>
+          <a class="button" href="#">следующая</a>
         </li>
       </ul>
     </section>
   </main>
-  <footer>
-    <section>
-      <h2>Адрес студии</h2>
-      <div>
-        <p>NЁRDS DESIGN STUDIO</p>
-        <p>
-          191186, Санкт-Петербург,<br>
-          ул. Б. Конюшенная, д. 19/8
-        </p>
-        <p>тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
-        <a href="#">Напишите нам</a>
-        <!--Тут будет карта-->
-      </div>
-    </section>
-    <section>
-      <h2>Давайте дружить</h2>
-      <ul>
-        <li>
-          <a href="#">Мы Вконтакте</a>
-        </li>
-        <li>
-          <a href="#">Мы в Фейсбук</a>
-        </li>
-        <li>
-          <a href="#">Мы в инстаграм</a>
-        </li>
-      </ul>
-      <p>Давайте дружить, это выгодно</p>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
-    </section>
+  <footer class="footer">
+    <h2>Адрес студии</h2>
+    <!--Тут будет карта-->
+    <div class="footer-contacts">
+      <h2>NЁRDS DESIGN STUDIO</h2>
+      <p>
+        191186, Санкт-Петербург,<br>
+        ул. Б. Конюшенная, д. 19/8
+      </p>
+      <p>тел. <a class="footer-phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+      <a class="button footer-contacts-button" href="#">Напишите нам</a>
+    </div>
+    <ul class="footer-social-list list-reset">
+      <li>
+        <a class="footer-social-button" href="#">Мы Вконтакте</a>
+      </li>
+      <li>
+        <a class="footer-social-button" href="#">Мы в Фейсбук</a>
+      </li>
+      <li>
+        <a class="footer-social-button" href="#">Мы в инстаграм</a>
+      </li>
+    </ul>
+    <h2>Давайте дружить, это выгодно!</h2>
+    <p>Скидка 10% для друзей из социальных сетей.</p>
   </footer>
+  <section>
+    <h2> Напишите нам</h2>
+    <button type="button">закрыть</button>
+    <!--место для формы-->
+  </section>
 </body>
 
 </html>
