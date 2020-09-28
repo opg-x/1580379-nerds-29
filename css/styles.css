@@ -92,8 +92,7 @@ body {
 }
 
 .main-navigation a:active {
-  color: inherit;
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 /*FEATURES*/
@@ -107,30 +106,19 @@ body {
   font-weight: 500;
   color: var(--basic-white);
   border-radius: 3px;
-}
-
-.features-button,
-.button-web,
-.footer-contacts-button,
-.to-buy-product-button {
   background-color: var(--coral);
 }
 
-.features-button:hover,
-.button-web:hover,
-.footer-contacts-button:hover,
-.to-buy-product-button:hover {
+.button:hover {
   background-color: var(--coral-hover);
 }
 
-.features-button:active,
-.button-web:active,
-.footer-contacts-button:active,
-.to-buy-product-button:active {
+button:active {
   background-color: var(--coral-active);
 }
 
-.feature-item h3 {
+.feature-item h3,
+.catalog-page-title {
   font-style: normal;
   font-weight: 500;
   font-size: 55px;
@@ -155,7 +143,7 @@ body {
 
 /*BUTTON-APP*/
 .button-app {
-  background-color: var(--coral);
+  background-color: var(--green);
 }
 
 .button-app:hover {
@@ -164,10 +152,6 @@ body {
 
 .button-app:active {
   background-color: var(--green-active);
-}
-
-.button-app {
-  background-color: var(--green);
 }
 
 /*BUTTON-PRESENTATION*/
@@ -194,11 +178,7 @@ body {
   line-height: 45px;
 }
 
-.about-us h3 {
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
+.about-us-services-list-title,
 .about-statistics p {
   font-weight: bold;
   text-transform: uppercase;
@@ -222,23 +202,22 @@ body {
   line-height: 30px;
 }
 
-.catalog-filter-sort-item a{
+.catalog-filter-sort-item a {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  color: var(--basic-black);
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .catalog-filter-sort-item a:hover {
-  opacity: 0.6;
+  color: rgba(0, 0, 0, 0.6);;
 }
 
 .catalog-filter-sort-item a:active {
-  opacity: 1;
+  color: rgba(0, 0, 0, 1);
 }
 
-.product-information a {
+.template-card-title a {
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
@@ -246,24 +225,21 @@ body {
   text-transform: uppercase;
 }
 
-.product-information a:hover {
+.template-card-title a:hover {
   color: var(--coral);
 }
 
-.product-information a:active {
-  color: var(--basic-black);
-  opacity: 0.3;
+.template-card-title a:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
-.product-information p {
-  font-size: 16px;
+.template-card-wrapper p {
   line-height: 18px;
   color: var(--dark-grey);
 }
 
 /*PAGINATION*/
-.catalog-pagination-list a{
-  font-size: 16px;
+.catalog-pagination-list a {
   color: var(--basic-black);
   background-color: var(--white-grey);
 }
@@ -273,7 +249,7 @@ body {
 }
 
 .catalog-pagination-list a:active {
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
   background-color: var(--light-alto);
 }
 

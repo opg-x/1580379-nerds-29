@@ -8,7 +8,7 @@
   <link href="css/styles.css" rel="stylesheet">
 </head>
 
-<body class="page-body inner-page">
+<body class="page-body">
   <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo">
@@ -23,8 +23,8 @@
       <a href="#" class="basket-link">корзина</a>
     </nav>
   </header>
-  <main class="center catalog">
-    <h1 class="catalog-title">Магазин готовых шаблонов</h1>
+  <main>
+    <h1 class="catalog-page-title">Магазин готовых шаблонов</h1>
     <section class="catalog-filter">
       <div class="catalog-filter-sort"></div>
       <h2>сортировать:</h2>
@@ -41,52 +41,76 @@
       <h2>список готовой продукции</h2>
       <ul class="catalog-product-list list-reset">
         <li>
-          <img src="#" alt="Картинка сайта для туристов в городе Седона" />
-          <div class="product-information">
-            <h3><a href="#">SEDONA</a></h3>
-            <p>Информационный сайт для туристов</p>
-            <button class="button to-buy-product-button" type="button">9 900 ₽</button>
-          </div>
+          <article class="template-card">
+            <img src="#" alt="Картинка сайта для туристов в городе Седона" />
+            <div class="template-card-wrapper">
+              <h3 class="template-card-title">
+                <a href="#">SEDONA</a>
+              </h3>
+              <p>Информационный сайт для туристов</p>
+              <button class="button template-card-button" type="button">9 900 ₽</button>
+            </div>
+            </artile>
         </li>
         <li>
-          <img src="#" alt="Мобильное приложени Пинк" />
-          <div class="product-information">
-            <h3><a href="#">PINK APP</a></h3>
-            <p>Продуктовый лендинг приложения для IOS и Android</p>
-            <button class="button to-buy-product-button" type="button">9 900 ₽</button>
-          </div>
+          <article class="template-card">
+            <img src="#" alt="Мобильное приложени Пинк" />
+            <div class="template-card-wrapper">
+              <h3 class="template-card-title">
+                <a href="#">PINK APP</a>
+              </h3>
+              <p>Продуктовый лендинг приложения для IOS и Android</p>
+              <button class="button template-card-button" type="button">9 900 ₽</button>
+            </div>
+            </artile>
         </li>
         <li>
-          <img src="#" alt="Барбершоп Бородинский" />
-          <div class="product-information">
-            <h3><a href="#">BARBERSHOP</a></h3>
-            <p>Сайт салона красоты. Для мужчин ,да.</p>
-            <button class="button to-buy-product-button" type="button">9 900 ₽</button>
-          </div>
+          <article class="template-card">
+            <img src="#" alt="Барбершоп Бородинский" />
+            <div class="template-card-wrapper">
+              <h3 class="template-card-title">
+                <a href="#">BARBERSHOP</a>
+              </h3>
+              <p>Сайт салона красоты. Для мужчин ,да.</p>
+              <button class="button template-card-button" type="button">9 900 ₽</button>
+            </div>
+            </artile>
         </li>
         <li>
-          <img src="#" alt="Магазин изделий ручной работы для дома" />
-          <div class="product-information">
-            <h3><a href="#">MISHKA</a></h3>
-            <p>Интернет-магазин вязаных игрушек</p>
-            <button class="button to-buy-product-button" type="button">9 900 ₽</button>
-          </div>
+          <article class="template-card">
+            <img src="#" alt="Магазин изделий ручной работы для дома" />
+            <div class="template-card-wrapper">
+              <h3 class="template-card-title">
+                <a href="#">MISHKA</a>
+              </h3>
+              <p>Интернет-магазин вязаных игрушек</p>
+              <button class="button template-card-button" type="button">9 900 ₽</button>
+            </div>
+          </article>
         </li>
         <li>
-          <img src="#" alt="Учебное заведение 	&#34;А плюс	&#34;" />
-          <div class="product-information">
-            <h3><a href="#">A PLUS</a></h3>
-            <p>Лендинг курсов повышения квалификации</p>
-            <button class="button to-buy-product-button" type="button">9 900 ₽</button>
-          </div>
+          <article class="template-card">
+            <img src="#" alt="Учебное заведение 	&#34;А плюс	&#34;" />
+            <div class="template-card-wrapper">
+              <h3 class="template-card-title">
+                <a href="#">A PLUS</a>
+              </h3>
+              <p>Лендинг курсов повышения квалификации</p>
+              <button class="button template-card-button" type="button">9 900 ₽</button>
+            </div>
+          </article>
         </li>
         <li>
-          <img src="#" alt="Крафтовый квас &#34;Кваст&#34;" />
-          <div class="product-information">
-            <h3><a href="#">КВАСТ</a></h3>
-            <p>Промо-сайт производителя крафтового кваса</p>
-            <button class="button to-buy-product-button" type="button">9 900 ₽</button>
-          </div>
+          <article class="template-card">
+            <img src="#" alt="Крафтовый квас &#34;Кваст&#34;" />
+            <div class="template-card-wrapper">
+              <h3 class="template-card-title">
+                <a href="#">КВАСТ</a>
+              </h3>
+              <p>Промо-сайт производителя крафтового кваса</p>
+              <button class="button template-card-button" type="button">9 900 ₽</button>
+            </div>
+          </article>
         </li>
       </ul>
       <!--погинация-->
@@ -120,13 +144,13 @@
     </div>
     <ul class="footer-social-list list-reset">
       <li>
-        <a class="footer-social-button" href="#">Мы Вконтакте</a>
+        <a class="button footer-social-button" href="#">Мы Вконтакте</a>
       </li>
       <li>
-        <a class="footer-social-button" href="#">Мы в Фейсбук</a>
+        <a class="button footer-social-button" href="#">Мы в Фейсбук</a>
       </li>
       <li>
-        <a class="footer-social-button" href="#">Мы в инстаграм</a>
+        <a class="button footer-social-button" href="#">Мы в инстаграм</a>
       </li>
     </ul>
     <h2>Давайте дружить, это выгодно!</h2>
