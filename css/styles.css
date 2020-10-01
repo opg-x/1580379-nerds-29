@@ -196,6 +196,10 @@ button:active {
   color: var(--dark-grey-blue);
 }
 
+.partnership-list-image {
+  opacity: 0.2
+}
+
 /* INNER PAGE*/
 .catalog-filter h2 {
   font-weight: bold;
