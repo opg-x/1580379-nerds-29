@@ -50,15 +50,6 @@
   box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 body {
   min-width: 1200px;
   margin: 0;
@@ -71,10 +62,27 @@ body {
   background-color: var(--basic-white);
 }
 
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .list-reset {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+/*GRID*/
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  align-content: start;
 }
 
 /* MAIN NAVIGATION */
@@ -82,6 +90,18 @@ body {
   font-weight: 500;
   line-height: 30px;
   background-color: var(--white-grey);
+}
+
+.main-navigation-wrapper {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.main-navigation-list {
+  justify-self: center;
 }
 
 .main-navigation a {
@@ -96,10 +116,16 @@ body {
   color: var(--middle-black);
 }
 
-/*FEATURES*/
-.features,
+/*FEATURES / SLIDER*/
+.features-wrapper,
 .page-title {
   background-color: var(--white-grey);
+}
+
+.features {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .button {
@@ -131,16 +157,31 @@ button:active {
   color: var(--dark-grey-blue);
 }
 
+/*CONTAINER*/
+.other-content-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/*SERVICES*/
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(3 , 300px);
+  gap: 100px;
+}
+
 .services-list h3 {
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
+  text-transform: uppercase;
 }
 
-.services-list p {
+.services-list p,
+.about-us {
   color: var(--dark-grey-blue);
 }
-
 
 /*BUTTON-APP*/
 .button-app {
@@ -167,9 +208,12 @@ button:active {
 .button-presentation:active {
   background-color: var(--yellow-active);
 }
-
-.about-us {
-  color: var(--dark-grey-blue);
+/*ABOUT-US*/
+.about {
+  display: grid;
+  grid-template-columns: 660px 360px;
+  gap: 100px;
+  margin: 80px 0;
 }
 
 .about-us h2 {
@@ -195,7 +239,12 @@ button:active {
   line-height: 18px;
   color: var(--dark-grey-blue);
 }
-
+/*PARTNERSHIP*/
+.partnership-list {
+  display: grid;
+  grid-template-columns: repeat(4 , 1fr);
+  margin: 30px;
+}
 .partnership-list-image {
   opacity: 0.2
 }
@@ -259,6 +308,12 @@ button:active {
 }
 
 /*FOOTER*/
+.footer-content {
+width: 1200px;
+margin: 0 auto;
+padding: 0 20px;
+}
+
 .footer h2 {
   font-weight: bold;
   font-size: 36px;
@@ -285,7 +340,12 @@ button:active {
 .footer-phone {
   color: inherit;
 }
-
+/*FOOTER_SOCIAL*/
+.footer-social {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  margin: 60px 0;
+}
 
 .footer-social-button:link {
   background-color: var(--light-grey);
