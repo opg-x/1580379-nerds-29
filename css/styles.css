@@ -86,13 +86,13 @@ img {
 }
 
 /* MAIN NAVIGATION */
-.main-navigation {
+.main-header {
   font-weight: 500;
   line-height: 30px;
   background-color: var(--white-grey);
 }
 
-.main-navigation-wrapper {
+.main-navigation {
   display: grid;
   grid-template-columns: auto 1fr auto;
   width: 1200px;
