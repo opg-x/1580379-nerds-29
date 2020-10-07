@@ -77,6 +77,11 @@ img {
   list-style: none;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 /*GRID*/
 .page-body {
   min-height: 100%;
@@ -95,9 +100,6 @@ img {
 .main-navigation {
   display: grid;
   grid-template-columns: auto 1fr auto;
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
 }
 
 .main-navigation-list {
@@ -120,12 +122,6 @@ img {
 .features-wrapper,
 .page-title {
   background-color: var(--white-grey);
-}
-
-.features {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
 }
 
 .button {
@@ -157,17 +153,10 @@ button:active {
   color: var(--dark-grey-blue);
 }
 
-/*CONTAINER*/
-.other-content-wrapper {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
 /*SERVICES*/
 .services-list {
   display: grid;
-  grid-template-columns: repeat(3 , 300px);
+  grid-template-columns: repeat(3, 300px);
   gap: 100px;
 }
 
@@ -213,7 +202,7 @@ button:active {
   display: grid;
   grid-template-columns: 660px 360px;
   gap: 100px;
-  margin: 80px 0;
+  padding: 80px 0;
 }
 
 .about-us h2 {
@@ -242,8 +231,8 @@ button:active {
 /*PARTNERSHIP*/
 .partnership-list {
   display: grid;
-  grid-template-columns: repeat(4 , 1fr);
-  margin: 30px;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 30px;
 }
 .partnership-list-image {
   opacity: 0.2
@@ -308,12 +297,6 @@ button:active {
 }
 
 /*FOOTER*/
-.footer-content {
-width: 1200px;
-margin: 0 auto;
-padding: 0 20px;
-}
-
 .footer h2 {
   font-weight: bold;
   font-size: 36px;
@@ -344,7 +327,7 @@ padding: 0 20px;
 .footer-social {
   display: grid;
   grid-template-columns: 100px 1fr;
-  margin: 60px 0;
+  padding: 60px 0;
 }
 
 .footer-social-button:link {

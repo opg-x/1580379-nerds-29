@@ -10,7 +10,7 @@
 
 <body class="page-body">
   <header class="main-header">
-    <nav class="main-navigation">
+    <nav class="main-navigation container">
       <a class="main-header-logo" href="index.html">
         <img src="img\nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Nerds">
       </a>
@@ -25,110 +25,112 @@
   </header>
   <main>
     <h1 class="page-title">Магазин готовых шаблонов</h1>
-    <section class="catalog-filter">
-      <div class="catalog-filter-sort"></div>
-      <h2>сортировать:</h2>
-      <ul class="catalog-filter-sort-list list-reset">
-        <li class="catalog-filter-sort-item"><a href="#">по цене</a></li>
-        <li class="catalog-filter-sort-item"><a href="#">по типу</a></li>
-        <li class="catalog-filter-sort-item"><a href="#">по названию</a></li>
-        <li class="catalog-filter-sort-item"><a href="#">по убыванию</a></li>
-        <li class="catalog-filter-sort-item"><a href="#">по возрастанию</a></li>
-      </ul>
-      </div>
-    </section>
-    <section class="catalog-product">
-      <h2>список готовой продукции</h2>
-      <ul class="catalog-product-list list-reset">
-        <li>
-          <article class="template-card">
-            <img src="img\img-sedona.jpg" width="369" height="578" alt="макет сайта Седона">
-            <div class="template-card-wrapper">
-              <h3 class="template-card-title">
-                <a href="#">SEDONA</a>
-              </h3>
-              <p>Информационный сайт для туристов</p>
-              <button class="button template-card-button" type="button">9 900 ₽</button>
-            </div>
-            </artile>
-        </li>
-        <li>
-          <article class="template-card">
-            <img src="img\img-pink.jpg" width="369" height="578" alt="макет приложения Пинк">
-            <div class="template-card-wrapper">
-              <h3 class="template-card-title">
-                <a href="#">PINK APP</a>
-              </h3>
-              <p>Продуктовый лендинг приложения для IOS и Android</p>
-              <button class="button template-card-button" type="button">9 900 ₽</button>
-            </div>
-            </artile>
-        </li>
-        <li>
-          <article class="template-card">
-            <img src="img\img-barbershop.jpg" width="369" height="578" alt="макет сайта Бородинский">
-            <div class="template-card-wrapper">
-              <h3 class="template-card-title">
-                <a href="#">BARBERSHOP</a>
-              </h3>
-              <p>Сайт салона красоты. Для мужчин ,да.</p>
-              <button class="button template-card-button" type="button">9 900 ₽</button>
-            </div>
-            </artile>
-        </li>
-        <li>
-          <article class="template-card">
-            <img src="img\img-mishka.jpg" width="369" height="578" alt="макет сайта Мишка">
-            <div class="template-card-wrapper">
-              <h3 class="template-card-title">
-                <a href="#">MISHKA</a>
-              </h3>
-              <p>Интернет-магазин вязаных игрушек</p>
-              <button class="button template-card-button" type="button">9 900 ₽</button>
-            </div>
-          </article>
-        </li>
-        <li>
-          <article class="template-card">
-            <img src="img\img-aplus.jpg" width="369" height="578" alt="макет сайта А плюс">
-            <div class="template-card-wrapper">
-              <h3 class="template-card-title">
-                <a href="#">A PLUS</a>
-              </h3>
-              <p>Лендинг курсов повышения квалификации</p>
-              <button class="button template-card-button" type="button">9 900 ₽</button>
-            </div>
-          </article>
-        </li>
-        <li>
-          <article class="template-card">
-            <img src="img\img-kvast.jpg" width="369" height="578" alt="макет сайта Кваст">
-            <div class="template-card-wrapper">
-              <h3 class="template-card-title">
-                <a href="#">КВАСТ</a>
-              </h3>
-              <p>Промо-сайт производителя крафтового кваса</p>
-              <button class="button template-card-button" type="button">9 900 ₽</button>
-            </div>
-          </article>
-        </li>
-      </ul>
-      <!--погинация-->
-      <ul class="catalog-pagination-list list-reset">
-        <li>
-          <a class="button">1</a>
-        </li>
-        <li>
-          <a class="button" href="#">2</a>
-        </li>
-        <li>
-          <a class="button" href="#">3</a>
-        </li>
-        <li>
-          <a class="button" href="#">следующая</a>
-        </li>
-      </ul>
-    </section>
+    <div class="container">
+      <section class="catalog-filter">
+        <div class="catalog-filter-sort">
+          <h2>сортировать:</h2>
+          <ul class="catalog-filter-sort-list list-reset">
+            <li class="catalog-filter-sort-item"><a href="#">по цене</a></li>
+            <li class="catalog-filter-sort-item"><a href="#">по типу</a></li>
+            <li class="catalog-filter-sort-item"><a href="#">по названию</a></li>
+            <li class="catalog-filter-sort-item"><a href="#">по убыванию</a></li>
+            <li class="catalog-filter-sort-item"><a href="#">по возрастанию</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="catalog-product">
+        <h2>список готовой продукции</h2>
+        <ul class="catalog-product-list list-reset">
+          <li>
+            <article class="template-card">
+              <img src="img\img-sedona.jpg" width="369" height="578" alt="макет сайта Седона">
+              <div class="template-card-wrapper">
+                <h3 class="template-card-title">
+                  <a href="#">SEDONA</a>
+                </h3>
+                <p>Информационный сайт для туристов</p>
+                <button class="button template-card-button" type="button">9 900 ₽</button>
+              </div>
+              </artile>
+          </li>
+          <li>
+            <article class="template-card">
+              <img src="img\img-pink.jpg" width="369" height="578" alt="макет приложения Пинк">
+              <div class="template-card-wrapper">
+                <h3 class="template-card-title">
+                  <a href="#">PINK APP</a>
+                </h3>
+                <p>Продуктовый лендинг приложения для IOS и Android</p>
+                <button class="button template-card-button" type="button">9 900 ₽</button>
+              </div>
+              </artile>
+          </li>
+          <li>
+            <article class="template-card">
+              <img src="img\img-barbershop.jpg" width="369" height="578" alt="макет сайта Бородинский">
+              <div class="template-card-wrapper">
+                <h3 class="template-card-title">
+                  <a href="#">BARBERSHOP</a>
+                </h3>
+                <p>Сайт салона красоты. Для мужчин ,да.</p>
+                <button class="button template-card-button" type="button">9 900 ₽</button>
+              </div>
+              </artile>
+          </li>
+          <li>
+            <article class="template-card">
+              <img src="img\img-mishka.jpg" width="369" height="578" alt="макет сайта Мишка">
+              <div class="template-card-wrapper">
+                <h3 class="template-card-title">
+                  <a href="#">MISHKA</a>
+                </h3>
+                <p>Интернет-магазин вязаных игрушек</p>
+                <button class="button template-card-button" type="button">9 900 ₽</button>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="template-card">
+              <img src="img\img-aplus.jpg" width="369" height="578" alt="макет сайта А плюс">
+              <div class="template-card-wrapper">
+                <h3 class="template-card-title">
+                  <a href="#">A PLUS</a>
+                </h3>
+                <p>Лендинг курсов повышения квалификации</p>
+                <button class="button template-card-button" type="button">9 900 ₽</button>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="template-card">
+              <img src="img\img-kvast.jpg" width="369" height="578" alt="макет сайта Кваст">
+              <div class="template-card-wrapper">
+                <h3 class="template-card-title">
+                  <a href="#">КВАСТ</a>
+                </h3>
+                <p>Промо-сайт производителя крафтового кваса</p>
+                <button class="button template-card-button" type="button">9 900 ₽</button>
+              </div>
+            </article>
+          </li>
+        </ul>
+        <!--погинация-->
+        <ul class="catalog-pagination-list list-reset">
+          <li>
+            <a class="button">1</a>
+          </li>
+          <li>
+            <a class="button" href="#">2</a>
+          </li>
+          <li>
+            <a class="button" href="#">3</a>
+          </li>
+          <li>
+            <a class="button" href="#">следующая</a>
+          </li>
+        </ul>
+      </section>
+    </div>
   </main>
   <footer class="footer">
     <h2>Адрес студии</h2>
