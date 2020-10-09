@@ -10,36 +10,41 @@
 
 <body class="page-body">
   <header class="main-header">
-    <nav class="main-navigation container">
-      <a class="main-header-logo" href="index.html">
-        <img src="img\nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Nerds">
-      </a>
-      <ul class="main-navigation-list list-reset">
-        <li><a href="index.html">cтудия</a></li>
-        <li><a href="#">клиенты</a></li>
-        <li><a>магазин</a></li>
-        <li><a href="#">контакты</a></li>
-      </ul>
-      <a href="#" class="basket-link">корзина</a>
-    </nav>
+    <div class="container">
+      <nav class="main-navigation container">
+        <a class="main-header-logo" href="index.html">
+          <img src="img\nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Nerds">
+        </a>
+        <ul class="main-navigation-list list-reset">
+          <li><a href="index.html">cтудия</a></li>
+          <li><a href="#">клиенты</a></li>
+          <li><a>магазин</a></li>
+          <li><a href="#">контакты</a></li>
+        </ul>
+        <a href="#" class="basket-link">корзина</a>
+      </nav>
+    </div>
   </header>
   <main>
-    <h1 class="page-title">Магазин готовых шаблонов</h1>
+    <div class="page-title-wrapper">
+      <h1 class="page-title">Магазин готовых шаблонов</h1>
+    </div>
     <div class="container">
+      <section class="sort-filter">
+        <h2>стоимость:</h2>
+      </section>
       <section class="catalog-filter">
-        <div class="catalog-filter-sort">
-          <h2>сортировать:</h2>
-          <ul class="catalog-filter-sort-list list-reset">
-            <li class="catalog-filter-sort-item"><a href="#">по цене</a></li>
-            <li class="catalog-filter-sort-item"><a href="#">по типу</a></li>
-            <li class="catalog-filter-sort-item"><a href="#">по названию</a></li>
-            <li class="catalog-filter-sort-item"><a href="#">по убыванию</a></li>
-            <li class="catalog-filter-sort-item"><a href="#">по возрастанию</a></li>
-          </ul>
-        </div>
+        <h2>сортировать:</h2>
+        <ul class="catalog-filter-list list-reset">
+          <li class="catalog-filter-item"><a href="#">по цене</a></li>
+          <li class="catalog-filter-item"><a href="#">по типу</a></li>
+          <li class="catalog-filter-item"><a href="#">по названию</a></li>
+          <li class="catalog-filter-item"><a href="#">по убыванию</a></li>
+          <li class="catalog-filter-item"><a href="#">по возрастанию</a></li>
+        </ul>
       </section>
       <section class="catalog-product">
-        <h2>список готовой продукции</h2>
+        <!--<h2>список готовой продукции</h2>-->
         <ul class="catalog-product-list list-reset">
           <li>
             <article class="template-card">
@@ -135,28 +140,34 @@
   <footer class="footer">
     <h2>Адрес студии</h2>
     <!--Тут будет карта-->
-    <div class="footer-contacts">
-      <h2>NЁRDS DESIGN STUDIO</h2>
-      <p>
-        191186, Санкт-Петербург,<br>
-        ул. Б. Конюшенная, д. 19/8
-      </p>
-      <p>тел. <a class="footer-phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
-      <a class="button footer-contacts-button" href="#">Напишите нам</a>
+    <div class="container">
+      <section class="footer-contacts">
+        <h2>NЁRDS DESIGN STUDIO</h2>
+        <p>
+          191186, Санкт-Петербург,<br>
+          ул. Б. Конюшенная, д. 19/8
+        </p>
+        <p>тел. <a class="footer-phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+        <a class="button footer-contacts-button" href="#">Напишите нам</a>
+      </section>
+      <div class="footer-social">
+        <ul class="footer-social-list list-reset">
+          <li>
+            <a class="footer-social-button" href="#">Мы Вконтакте</a>
+          </li>
+          <li>
+            <a class="footer-social-button" href="#">Мы в Фейсбук</a>
+          </li>
+          <li>
+            <a class="footer-social-button" href="#">Мы в инстаграм</a>
+          </li>
+        </ul>
+        <div class="footer-social-information">
+          <h2>Давайте дружить, это выгодно!</h2>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </div>
     </div>
-    <ul class="footer-social-list list-reset">
-      <li>
-        <a class="footer-social-button" href="#">Мы Вконтакте</a>
-      </li>
-      <li>
-        <a class="footer-social-button" href="#">Мы в Фейсбук</a>
-      </li>
-      <li>
-        <a class="footer-social-button" href="#">Мы в инстаграм</a>
-      </li>
-    </ul>
-    <h2>Давайте дружить, это выгодно!</h2>
-    <p>Скидка 10% для друзей из социальных сетей.</p>
   </footer>
   <section>
     <h2> Напишите нам</h2>
