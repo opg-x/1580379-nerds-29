@@ -246,6 +246,7 @@ button:active {
 /* INNER PAGE*/
 .page-heading-title {
   text-align: center;
+  margin: 0;
 }
 
 .catalog-container {
@@ -336,6 +337,7 @@ button:active {
   line-height: 22px;
   color: var(--dark-grey-blue);
 }
+
 .footer-contacts {
   background-color: var(--basic-white);
 }
@@ -352,6 +354,7 @@ button:active {
 .footer-phone {
   color: inherit;
 }
+
 /*FOOTER_SOCIAL*/
 .footer-social {
   display: grid;
