@@ -77,8 +77,7 @@ img {
   list-style: none;
 }
 
-.container,
-.page-title {
+.container {
   width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
@@ -121,7 +120,7 @@ img {
 }
 
 /*FEATURES / SLIDER*/
-.page-title-wrapper,
+.page-heading,
 .features {
   background-color: var(--white-grey);
 }
@@ -143,16 +142,12 @@ button:active {
 }
 
 .feature-item h3,
-.page-title {
+.page-heading-title {
   font-style: normal;
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
-}
-
-.page-title {
-  padding: 80px 20px;
-  text-align: center;
+  padding: 50px 0;
 }
 
 .feature-item p {
@@ -204,6 +199,7 @@ button:active {
 .button-presentation:active {
   background-color: var(--yellow-active);
 }
+
 /*ABOUT-US*/
 .about {
   display: grid;
@@ -235,29 +231,31 @@ button:active {
   line-height: 18px;
   color: var(--dark-grey-blue);
 }
+
 /*PARTNERSHIP*/
 .partnership-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding: 30px;
 }
+
 .partnership-list-image {
   opacity: 0.2
 }
 
 /* INNER PAGE*/
-main .container {
+.page-heading-title {
+  text-align: center;
+}
+
+.catalog-container {
   display: grid;
   grid-template-columns: repeat(3, 360px);
   gap: 60px 40px;
 }
 
-.catalog-filter-list
-
 .sort-filter {
   grid-column: 1/2;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 }
 
 .catalog-filter {
