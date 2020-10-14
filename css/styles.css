@@ -99,23 +99,42 @@ img {
 }
 
 .main-navigation {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
+  display: flex;
+}
+
+.main-header-logo {
+  flex-basis: 160px;
+  margin-top: 49px;
+  margin-right: 200px;
 }
 
 .main-navigation-list {
-  justify-self: center;
+  margin-top: 75px;
+  display: flex;
 }
 
-.main-navigation a {
+.main-navigation-list li {
+  margin-right: 45px;
+}
+
+.basket-link {
+  padding-left: 50px;
+  margin-top: 75px;
+  margin-left: auto;
+}
+
+.main-navigation-list a,
+.basket-link {
   color: var(--basic-black);
 }
 
-.main-navigation a:hover {
+.main-navigation-list a:hover,
+.basket-link:hover {
   color: var(--coral);
 }
 
-.main-navigation a:active {
+.main-navigationlist a:active,
+.basket-link:active {
   color: var(--middle-black);
 }
 
@@ -157,9 +176,14 @@ button:active {
 
 /*SERVICES*/
 .services-list {
-  display: grid;
-  grid-template-columns: repeat(3, 300px);
-  gap: 100px;
+  display: flex;
+  border-bottom: 2px solid var(--white-grey);
+}
+
+.services-list li {
+  flex-basis: 300px;
+  margin-right: 100px;
+  margin-bottom: 80px;
 }
 
 .services-list h3 {
@@ -202,10 +226,19 @@ button:active {
 
 /*ABOUT-US*/
 .about {
-  display: grid;
-  grid-template-columns: 660px 360px;
-  gap: 100px;
-  padding: 80px 0;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding-bottom: 75px;
+  border-bottom: 2px solid var(--white-grey);
+}
+
+.about-us {
+width: 600px;
+}
+
+.about-statistics {
+  width: 360px;
 }
 
 .about-us h2 {
@@ -234,9 +267,11 @@ button:active {
 
 /*PARTNERSHIP*/
 .partnership-list {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  border-bottom: 2px solid var(--white-grey);
 }
 
 .partnership-list-image {
@@ -357,9 +392,14 @@ button:active {
 
 /*FOOTER_SOCIAL*/
 .footer-social {
-  display: grid;
-  grid-template-columns: 100px 1fr;
-  padding: 60px 0;
+  display: flex;
+  padding: 68px 0;
+}
+
+.footer-social-list {
+  width: 260px;
+  display: flex;
+  margin-right: 140px;
 }
 
 .footer-social-button:link {
