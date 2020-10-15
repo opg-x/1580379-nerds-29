@@ -314,6 +314,18 @@ width: 600px;
   text-transform: uppercase;
 }
 
+.catalog-filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.catalog-filter-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
 .catalog-filter-item a {
   font-size: 14px;
   line-height: 18px;
@@ -327,6 +339,17 @@ width: 600px;
 
 .catalog-filter-item a:active {
   color: var(--basic-black);
+}
+
+.catalog-product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.catalog-product-list li{
+  width: 360px;
+  margin-bottom: 30px;
 }
 
 .template-card-title a {
