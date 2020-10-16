@@ -342,14 +342,10 @@ width: 600px;
 }
 
 .catalog-product-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.catalog-product-list li{
-  width: 360px;
-  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+  row-gap: 30px;
 }
 
 .template-card-title a {
