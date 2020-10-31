@@ -503,7 +503,7 @@ width: 650px;
   height: 100%;
 }
 
-.partnership-list-item::before {
+.partnership-list-item:not(:last-child)::before {
   content: "";
   position: absolute;
   width: 2px;
