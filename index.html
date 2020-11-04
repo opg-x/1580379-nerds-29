@@ -68,20 +68,17 @@
       <section class="services">
         <h2 class="visually-hidden">Услуги</h2>
         <ul class="services-list list-reset">
-          <li class="web-item">
-            <div class="service-list-content-img web-item-img"></div>
+          <li class="services-item services-item-web">
             <h3>Веб сайты</h3>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
             <a class="button button-web" href="catalog.html">Заказать</a>
           </li>
-          <li class="app-item">
-            <div class="service-list-content-img app-item-img"></div>
+          <li class="services-item services-item-app">
             <h3>Приложения</h3>
             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
             <a class="button button-app" href="catalog.html">Заказать</a>
           </li>
-          <li class="presentation-item">
-            <div class="service-list-content-img presentation-item-img"></div>
+          <li class="services-item services-item-presentation">
             <h3>Презентации</h3>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
             <a class="button button-presentation" href="catalog.html">Заказать</a>
@@ -169,19 +166,19 @@
       <div class="footer-social">
         <ul class="footer-social-list list-reset">
           <li>
-            <a class="footer-social-button vkontakte" href="#">
+            <a class="footer-social-button" href="#">
               <span class="visually-hidden">Мы Вконтакте</span>
               <img src="img/vk-icon.svg">
             </a>
           </li>
           <li>
-            <a class="footer-social-button facebook" href="#">
+            <a class="footer-social-button" href="#">
               <span class="visually-hidden">Мы в Фейсбук</span>
               <img src="img/fb-icon.svg">
             </a>
           </li>
           <li>
-            <a class="footer-social-button instagram" href="#">
+            <a class="footer-social-button" href="#">
               <span class="visually-hidden">Мы в инстаграм</span>
               <img src="img/insta-icon.svg">
             </a>
@@ -195,24 +192,27 @@
     </div>
   </footer>
   <section class="modal modal-comunication">
-    <h2>Напишите нам</h2>
-    <form class="communication-form" action="https://echo.htmlacademy.ru" method="post">
-      <p class="appointment-item">
-        <label for="name">Ваше имя:</label>
-        <input id="name" type="text" name="username" placeholder="Имя Фамилия">
-      </p>
-      <p class="appointment-item">
-        <label for="mail">Ваш email:</label>
-        <input id="mail" type="email" name="useremail" placeholder="email@example.com">
-      </p>
-      <p class="appointment-item communication-form-letter">
-        <label for="letter">Текст письма:</label>
-        <input id="letter" type="text" name="userletter" placeholder="В свободой форме">
-      </p>
-      <button class="button communication-form-button" type="submit">отправить</button>
-    </form>
-    <button type="button">закрыть</button>
+    <fieldset>
+      <h2>Напишите нам</h2>
+      <form class="communication-form" action="https://echo.htmlacademy.ru" method="post">
+        <ul class="communication-form-list list-reset">
+          <li class="communication-form-item">
+            <label for="name">Ваше имя:</label>
+            <input id="name" type="text" name="username" placeholder="Имя Фамилия">
+          </li>
+          <li class="communication-form-item">
+            <label for="mail">Ваш email:</label>
+            <input id="mail" type="email" name="useremail" placeholder="email@example.com">
+          </li>
+          <li class="communication-form-item">
+            <label for="letter">Текст письма:</label>
+            <textarea id="letter" name="userletter" placeholder="В свободой форме"></textarea>
+          </li>
+        </ul>
+        <button class="button communication-form-button" type="submit">отправить</button>
+      </form>
     </fieldset>
+    <button type="button">закрыть</button>
   </section>
 </body>
 
