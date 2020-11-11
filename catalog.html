@@ -18,10 +18,12 @@
         <ul class="main-navigation-list list-reset">
           <li><a class="header-link" href="index.html">cтудия</a></li>
           <li><a class="header-link" href="#">клиенты</a></li>
-          <li><a class="header-link">магазин</a></li>
+          <li><a class="header-link header-link-curent">магазин</a></li>
           <li><a class="header-link" href="#">контакты</a></li>
         </ul>
-        <a href="#" class="basket-link header-link">корзина</a>
+        <div class="user-navigation">
+          <a href="#" class="basket-link header-link">корзина</a>
+        </div>
       </nav>
     </div>
   </header>
@@ -34,6 +36,59 @@
     <div class="container catalog-container">
       <section class="sort-filter">
         <h2>стоимость:</h2>
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>сетка:</legend>
+            <ul class="layout-filter list-reset">
+              <li>
+                <input class="visually-hidden layout-filter-input-radio" id="adaptive" type="radio" name="layout"
+                  value="adaptive">
+                <label for="adaptive">Адаптивная</label>
+              </li>
+              <li>
+                <input class="visually-hidden layout-filter-input-radio" id="static" type="radio" name="layout"
+                  value="static">
+                <label for="static">Фиксированная</label>
+              </li>
+              <li>
+                <input class="visually-hidden layout-filter-input-radio" id="rubber" type="radio" name="layout"
+                  value="rubber">
+                <label for="rubber">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>особенности:</legend>
+            <ul class="features-filter list-reset">
+              <li>
+                <input class="visually-hidden features-filter-input-checkbox" id="slider" type="checkbox"
+                  name="features-sort" value="slider" checked="checked">
+                <label for="slider">Слайдер</label>
+              </li>
+              <li>
+                <input class="visually-hidden features-filter-input-checkbox" id="blok-of-advantages" type="checkbox"
+                  name="features-sort" value="blok-of-advantages">
+                <label for="blok-of-advantages">Блок преимуществ</label>
+              </li>
+              <li>
+                <input class="visually-hidden features-filter-input-checkbox" id="news" type="checkbox"
+                  name="features-sort" value="news" checked="checked">
+                <label for="news">Новости</label>
+              </li>
+              <li>
+                <input class="visually-hidden features-filter-input-checkbox" id="galery" type="checkbox"
+                  name="features-sort" value="galery">
+                <label for="galery">Галерея</label>
+              </li>
+              <li>
+                <input class="visually-hidden features-filter-input-checkbox" id="bin" type="checkbox"
+                  name="features-sort" value="bin">
+                <label for="bin">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit">показать</button>
+        </form>
       </section>
       <section class="catalog-filter">
         <h2>сортировать:</h2>
@@ -41,8 +96,26 @@
           <li class="catalog-filter-item"><a href="#">по цене</a></li>
           <li class="catalog-filter-item"><a href="#">по типу</a></li>
           <li class="catalog-filter-item"><a href="#">по названию</a></li>
-          <li class="catalog-filter-item"><a href="#">по убыванию</a></li>
-          <li class="catalog-filter-item"><a href="#">по возрастанию</a></li>
+          <li class="catalog-filter-item">
+            <a href="#">
+              <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.2">
+                  <path d="M5.5 10L0 0H11" fill="#A6A6A6">
+                </g>
+              </svg>
+              <span class="visually-hidden">по убыванию</span>
+            </a>
+          </li>
+          <li class="catalog-filter-item">
+            <a href="#">
+              <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.2">
+                  <path d="M5.5 0L0 10H11L5.5 0Z" fill="#A6A6A6">
+                </g>
+              </svg>
+              <span class="visually-hidden">по возрастанию</span>
+            </a>
+          </li>
         </ul>
       </section>
       <section class="catalog-product">
@@ -140,28 +213,39 @@
     </div>
   </main>
   <footer class="footer">
-    <h2>Адрес студии</h2>
+    <h2 class="visually-hidden">Адрес студии</h2>
     <!--Тут будет карта-->
     <div class="container">
       <section class="footer-contacts">
-        <h2>NЁRDS DESIGN STUDIO</h2>
-        <p>
-          191186, Санкт-Петербург,<br>
-          ул. Б. Конюшенная, д. 19/8
-        </p>
-        <p>тел. <a class="footer-phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
-        <a class="button footer-contacts-button" href="#">Напишите нам</a>
+        <div class="footer-contacts-content">
+          <h2>NЁRDS DESIGN STUDIO</h2>
+          <p>
+            191186, Санкт-Петербург,<br>
+            ул. Б. Конюшенная, д. 19/8
+          </p>
+          <p>тел. <a class="footer-phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+          <a class="button footer-contacts-button" href="#">Напишите нам</a>
+        </div>
       </section>
       <div class="footer-social">
         <ul class="footer-social-list list-reset">
           <li>
-            <a class="footer-social-button" href="#">Мы Вконтакте</a>
+            <a class="footer-social-button" href="#">
+              <span class="visually-hidden">Мы Вконтакте</span>
+              <img src="img/vk-icon.svg">
+            </a>
           </li>
           <li>
-            <a class="footer-social-button" href="#">Мы в Фейсбук</a>
+            <a class="footer-social-button" href="#">
+              <span class="visually-hidden">Мы в Фейсбук</span>
+              <img src="img/fb-icon.svg">
+            </a>
           </li>
           <li>
-            <a class="footer-social-button" href="#">Мы в инстаграм</a>
+            <a class="footer-social-button" href="#">
+              <span class="visually-hidden">Мы в инстаграм</span>
+              <img src="img/insta-icon.svg">
+            </a>
           </li>
         </ul>
         <div class="footer-social-information">
@@ -171,11 +255,6 @@
       </div>
     </div>
   </footer>
-  <section>
-    <h2> Напишите нам</h2>
-    <button type="button">закрыть</button>
-    <!--место для формы-->
-  </section>
 </body>
 
 </html>

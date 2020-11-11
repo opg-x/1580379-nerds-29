@@ -29,12 +29,15 @@
   --dark-grey: #666666;
   --shadow-gradient: rgba(0, 1, 1, 0.1);
   --grey: #a6a6a6;
+  --tundora: rgb(77, 77, 77);
+  --thunder: #231F20;
   --light-grey: #e1e1e1;
   --silver: #c1c1c1;
   --alto: #dfdfdf;
   --light-alto: #d5d5d5;
   --basic-white: #ffffff;
   --opacity-white: rgba(255, 255, 255, 0.3);
+  --outer-space: #283136;
   --white-grey: #eeeeee;
   --coral: #fb565a;
   --coral-hover: #e74246;
@@ -220,8 +223,7 @@ img {
   margin-bottom: 80px;
 }
 
-.feature-item h3,
-.page-heading-title {
+.feature-item h3 {
   font-style: normal;
   font-weight: 500;
   font-size: 55px;
@@ -542,26 +544,59 @@ width: 650px;
 
 /* INNER PAGE*/
 .page-heading-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
   text-align: center;
+  padding: 72px 0 108px;
   margin: 0;
+  margin-bottom: 55px
 }
 
 .catalog-container {
   display: grid;
   grid-template-columns: repeat(3, 360px);
-  gap: 60px 40px;
+  grid-template-rows: auto auto;
+  column-gap: 40px;
 }
 
 .sort-filter {
   grid-column: 1/2;
+  grid-row: 1/-1;
 }
 
 .catalog-filter {
   grid-column: 2/-1;
+  margin-bottom: 48px;
 }
 
 .catalog-product {
   grid-column: 2/-1;
+}
+
+.sort-filter fieldset {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 45px;
+  border: none;
+}
+
+.sort-filter fieldset:first-child {
+  margin-bottom: 54px;
+}
+
+.sort-filter legend {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.sort-filter ul {
+  line-height: 19px;
+  color: var(--outer-space);
 }
 
 .sort-filter h2,
@@ -572,6 +607,89 @@ width: 650px;
   text-transform: uppercase;
 }
 
+.sort-filter h2 {
+  margin-bottom: 53px;
+}
+
+.sort-filter label,
+.features-filter label,
+.layout-filter {
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+.layout-filter li {
+  margin-bottom: 30px;
+}
+
+.layout-filter label,
+.features-filter label {
+padding-left: 36px;
+}
+
+.layout-filter-input-radio + label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+  border: 4px solid var(--tundora);
+  opacity: 0.4;
+  border-radius: 50%;
+}
+
+.layout-filter-input-radio:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  top: 50%;
+  left: 12.5px;
+  transform: translate(-50%, -50%);
+  background-color: var(--tundora);
+  opacity: 0.4;
+  border-radius: 50%;
+}
+
+.layout-filter-input-radio:hover + label::before,
+.layout-filter-input-radio:hover + label::after {
+  opacity: 1;
+}
+
+.features-filter li {
+  margin-bottom: 17px;
+}
+
+.features-filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/checkbox-off.svg");
+  opacity: 0.4;
+}
+
+.features-filter-input-checkbox:hover + label::before {
+  opacity: 1;
+}
+
+.features-filter-input-checkbox:checked + label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 23px;
+  background-image: url("../img/checkbox-on.svg");
+}
+
 .catalog-filter {
   display: flex;
   flex-wrap: wrap;
@@ -580,7 +698,9 @@ width: 650px;
 
 .catalog-filter-list {
   display: flex;
+  flex-basis: 360px;
   flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -599,13 +719,33 @@ width: 650px;
   color: var(--basic-black);
 }
 
+.catalog-filter-item:hover g {
+  opacity: 1;
+}
+
+.catalog-filter-item:active path {
+  fill: var(--thunder);
+}
+
 .catalog-product-list {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 360px 360px;
   column-gap: 40px;
   row-gap: 30px;
 }
 
+.catalog-product-list li::before {
+  content: "";
+  display: block;
+  width: 360px;
+  height: 40px;
+  background-image: url("../img/browser.svg");
+}
+
+.template-card {
+  width: 360px;
+  height:
+}
 .template-card-title a {
   font-weight: bold;
   font-size: 18px;
@@ -626,6 +766,7 @@ width: 650px;
   line-height: 18px;
   color: var(--dark-grey);
 }
+
 
 /*PAGINATION*/
 .catalog-pagination-list a {
@@ -679,7 +820,7 @@ width: 650px;
 
 .footer-contacts-button {
   width: 219px;
-  height: 50px;
+  min-height: 50px;
 }
 
 /*FOOTER_SOCIAL*/
